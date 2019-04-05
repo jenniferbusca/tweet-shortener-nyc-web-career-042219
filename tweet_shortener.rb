@@ -41,7 +41,7 @@ def bulk_tweet_shortener(tweets)
   end
 end
 
-def selective_tweet_shortener(:tweets)
+def selective_tweet_shortener(tweets)
   # new_tweets = tweets.split(" ")
   tweets.each do |tweet|
     if tweet.length <= 140
