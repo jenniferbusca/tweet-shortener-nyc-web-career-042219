@@ -50,17 +50,4 @@ def selective_tweet_shortener(tweet)
 end
 
 
-# def selective_tweet_shortener(tweets)
-#   new_tweets = []
-
-#   tweets.each do |tweet|
-#     if tweet.length <= 140
-#       new_tweets << tweet
-#     else
-#       new_tweets << word_substituter(tweet)
-#     end
-#   end
-#   return new_tweets
-# end
-
 
