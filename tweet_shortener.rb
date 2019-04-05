@@ -49,7 +49,7 @@ def selective_tweet_shortener(tweet)
       return word_substituter(tweet)
     # end
   end
-  return new_tweets
+  # return new_tweets
 end
 
 
