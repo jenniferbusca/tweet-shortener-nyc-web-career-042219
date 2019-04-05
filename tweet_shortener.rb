@@ -26,7 +26,7 @@ end
 def word_substituter(tweet)
   words = tweet.split(" ")
   new_words = words.map do |word|
-    if dictionary.include?(word)
+    if dictionary.keys.include?(word)
       word = dictionary[word]
     else
       word
@@ -42,7 +42,7 @@ def bulk_tweet_shortener(tweets)
 end
 
 def selective_tweet_shortener(tweets)
-  tweets.each do |tweet|
+  tweets.values do |tweet|
     if tweet.length <= 140
       puts tweet
     else
