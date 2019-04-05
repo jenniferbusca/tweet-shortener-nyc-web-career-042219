@@ -42,7 +42,8 @@ def bulk_tweet_shortener(tweets)
 end
 
 def selective_tweet_shortener(tweets)
-  tweets.each do |k, v|
+  new_tweets = tweets.split(" ")
+  new_tweets.each do |k, v|
     if v.length <= 140
       puts v
     else
